@@ -7,6 +7,7 @@ class Conversation extends Model {}
 Conversation.init({
     id: {
         type: DataTypes.STRING,
+        primaryKey: true,
         defaultValue: uuidv4(),
         allowNull: false
     },
